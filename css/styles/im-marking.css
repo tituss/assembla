@@ -1,0 +1,7 @@
+.interaction.package-editable.im-marking .contentblock p span {
+	line-height: 19px;
+}
+
+.interaction.package-editable.im-marking .contentblock p span:first-child {
+	margin-left: 1.5em;
+}

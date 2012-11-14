@@ -1,0 +1,85 @@
+
+.isIE9 .interaction.package.om-pairs .match_view .block { /* ie9 won't show shadows for the drag_holder otherwise */
+  border-collapse: separate;
+}
+
+
+/* pairAlignment ontop */ 
+
+.isIE9 .interaction.package.om-pairs .match_view.align_ontop .block .drop_area{ /* ie9 will only show shadow with half the size otherwise */
+  box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.35);
+}
+ 
+.interaction.package-editable.om-pairs .match_view.align_ontop .block .drop_area {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.35);
+  /* Added MLG 2012-07-20 #48 */
+  margin: 0 4px 10px 6px;
+  
+}
+
+/* Added MLG 2012-07-25 #48 */
+.interaction.package-editable.om-pairs .match_view.align_ontop .block .drop_area.is-active-target {
+  box-shadow: 0 0 0 6px rgba(5, 171, 224, 0.5);
+}
+
+.interaction.package-editable.om-pairs .match_view.align_ontop .block .drop_area .content.text {
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.2);
+  color: #444444;
+  font-weight: bold;
+  padding: 2px 4px;
+  text-align: center;
+  text-shadow: 0 1px 0 #FFFFFF;
+}
+
+/* pairAlignment is vertical */
+
+.interaction.package-editable.om-pairs .match_view.align_vertical .block .drop_area > .content {
+  color: #444444;
+  font-weight: bold;
+  background-color: white;
+  text-shadow: 0 1px 0 #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.35);  
+}
+
+.interaction.package-editable.om-pairs .match_view.align_vertical .block .drop_area.has_drag > .content {
+  border-radius: 5px 5px 0px 0px;
+}
+
+.interaction.package-editable.om-pairs .match_view.align_vertical .block .drop_area.has_drag{
+  background-color: rgba(5, 171, 224, 0.25);
+  border-radius: 5px;
+}
+  
+  
+/* pairAlignment is horizontal */
+
+.interaction.package-editable.om-pairs .match_view.align_horizontal .block .drop_area > .content {
+  color: #444444;
+  font-weight: bold;
+  background-color: white;
+  text-shadow: 0 1px 0 #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.35);  
+}
+
+.interaction.package-editable.om-pairs .match_view.align_horizontal .block .drop_area.has_drag > .content {
+  border-radius: 5px 0px 0px 5px;
+}
+
+.interaction.package-editable.om-pairs .match_view.align_horizontal .block .drop_area.has_drag{
+  background-color: rgba(5, 171, 224, 0.25);
+  border-radius: 5px;
+}
+
+
+
+.interaction.om-pairs .wordpool {
+  background: #F5F5F5;
+  border-radius: 5px 5px 5px 5px;
+  padding: 4px;
+}
+    

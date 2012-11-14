@@ -1,0 +1,130 @@
+/* Added CB 2012-08-03 #7 */
+.audio_media.audio_media3{
+  width:248px;
+}
+
+#activity .audio_wrapper3 .audio_header {
+  height: 5px;
+}
+
+#activity .audio_wrapper3 .video_footer {
+  height: 42px;
+  min-height: 0;
+}
+
+.audio_wrapper3 .progress_area {
+  margin-bottom: 4px;
+  height:10px;
+}
+
+.audio_wrapper3 .progress_downloaded{
+  height:100%;
+}
+
+.audio_wrapper3 .progress_played{
+  height:100%;
+}
+
+/* Added CB 2012-08-07 #7 */
+.audio_wrapper3 .progress_played:after, .audio_wrapper3 .progress_area:hover .progress_played:after{
+  content: "\00a0";
+  display: block;
+  width: 3px;
+  height: 100%;
+  background: rgb(255,255,255);
+  float: right;
+  margin-top: 0;
+  margin-left:-3px;
+  border-radius: 0;
+  box-shadow: none;
+  margin-right: 0
+}
+
+.audio_wrapper3 .volume {
+  margin: 0 8px
+}
+
+/* Added CB 2012-08-03 #7 */
+.audio_wrapper3 .volume .mute_button {
+  height: 24px;
+  padding: 0 0 0 25px;
+}
+
+/* Added CB 2012-08-03 #7 - added to overwrite '#content_wrap ul' rule in player.css - would be better to remove the other rule or make it a bit more specific but I don't know what it's used for.*/
+#content_wrap ul.mute_button {
+  padding-left: 25px;
+}
+
+.audio_wrapper3 .timer {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  box-shadow: 0 -1px 0 0 rgba(255, 255, 255, 0.2) inset;
+  color: #ffffff;
+  font-size: 11px;
+  height: 17px;
+  line-height: 16px;
+  margin: 3px 0 0 2px;
+  padding: 1px 4px;
+}
+
+.audio_wrapper3 .timer:after, .audio_wrapper3 .timer:before {
+  content: '';
+  background: none;
+  height: 0;
+  width: 0;
+  display: none;
+}
+
+/* Updated CB 2012-08-03 #7 */
+#activity #content_wrap .audio_wrapper3 .video_extras {
+  margin-top: 0;
+  margin-right: 7px;
+}
+
+/* Updated CB 2012-08-03 #7 */
+#activity #content_wrap .audio_wrapper3 .button_holder .transcript_button, #activity #media .audio_wrapper3 .button_holder .transcript_button {
+  background: url("../img/icons/player_transcript.png") no-repeat top center;
+  height: 24px;
+  width: 20px;
+  margin: 0;
+  border: none;
+  color: transparent;
+  text-shadow: none;
+  display: block;
+  padding: 0px;
+}
+
+/* Added CB 2012-08-03 #7 */
+#activity #content_wrap .audio_wrapper3 .button_holder .transcript_button:hover, #activity #media .audio_wrapper3 .button_holder .transcript_button:hover {
+  background-position: center center;
+}
+
+/* Added CB 2012-08-03 #7 */
+#activity #content_wrap .audio_wrapper3 .button_holder .transcript_button:active, #activity #media .audio_wrapper3 .button_holder .transcript_button:active {
+  background-position: bottom center;
+}
+
+/* Added CB 2012-08-03 #7 */
+.audio_wrapper3 .progress_area,
+.audio_wrapper3 .play,
+.audio_wrapper3 .pause,
+.audio_wrapper3 .mute_button,
+.audio_wrapper3 .transcript_button{
+  cursor: pointer;
+}
+
+
+div.input-radio-hover {background-color:#a9d9ae !important;}
+
+.choice_interaction .input-radio, 
+.choice_interaction .input-checkbox {
+    border-radius: 10px 10px 10px 10px;
+    color: #333333;
+    cursor: default;
+    display: block;
+    float: left;
+    line-height: 18px;
+    margin: 0 6px 2px 0;
+    min-height: 0;
+    padding: 4px 10px 3px;
+}

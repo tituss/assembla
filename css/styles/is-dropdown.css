@@ -1,0 +1,5 @@
+/*extra line height for drop-down exercises so drop-downs don't make text look crowded*/
+
+.drop-down_boxes .contentblock{
+	line-height:28px;
+}

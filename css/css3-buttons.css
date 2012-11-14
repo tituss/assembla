@@ -1,0 +1,179 @@
+/*------------------------------------*\
+	CONTENTS
+\*------------------------------------*/
+/*
+WRAPPER
+BUTTON
+BUTTON LABEL
+BUTTON ICON
+ICONS
+DROPDOWN MENU
+*/
+
+
+/*------------------------------------*\
+	$WRAPPER
+\*------------------------------------*/
+.buttons {/* Style as you wish (toolbar) */
+}
+/* The Magnificent CLEARFIX */
+.buttons:before, .buttons:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+.buttons:after {
+	clear: both;
+}
+.buttons {
+	zoom: 1;
+}
+/* ------------------------ */
+
+/*------------------------------------*\
+	$BUTTON LABEL
+\*------------------------------------*/
+.ddm span.label, act_head_button span.label, .act_head_button span.label {
+	display: inline-block;
+	float: left;
+	padding: 0 1px;
+	overflow: hidden;
+}
+
+button:hover .label, .button:hover .label {
+	color: #333;
+}
+button:hover .label.red, .button:hover .label.red {
+	color: #DB4A37;
+}
+button:hover .label.blue, .button:hover .label.blue {
+	color: #7090C8;
+}
+button:hover .label.green, .button:hover .label.green {
+	color: #42B449;
+}
+button:hover .label.yellow, .button:hover .label.yellow {
+	color: #F7CB38;
+}
+button.blue .label, .button.blue .label {
+	color: #FFF !important;
+	text-shadow: 0 1px 0 #2F5BB7 !important;
+}
+button.green .label, .button.green .label {
+	color: #FFF !important;
+	text-shadow: 0 1px 0 #2D6200 !important;
+}
+button.red .label, .button.red .label {
+	color: #FFF !important;
+	text-shadow: 0 1px 0 #B0281A !important;
+}
+button.action .label, .button.action .label {
+	padding: 0 17px !important;
+}
+button.action:active .label, .button.action:active .label {
+	color: #333 !important;
+}
+button.blue:active .label, button.green:active .label, button.red:active .label, .button.blue:active .label, .button.green:active .label, .button.red:active .label {
+	color: #FFF !important;
+}
+/*------------------------------------*\
+	$DROPDOWN MENU
+\*------------------------------------*/
+div.dropdown {
+	float: right;
+	position: relative;
+	width:auto;
+}
+div.dropdown span.toggle {
+	width: 10px;
+	height: 6px;
+	margin-left: 2px;
+	margin-top: 9px;
+	margin-right: 2px;
+	padding-left: 1px;
+	float: right;
+	background: url(../img/toggle2.png) top right no-repeat;
+}
+/* Added MLG 2012-08-08 #12 */
+div.dropdown:hover span.toggle {
+	background: url(../img/toggle2_hover.png) top right no-repeat;
+}
+div.dropdown span.toggle.active {
+	background: url(../img/toggle2.png) bottom right no-repeat;
+}
+div.dropdown:hover span.toggle.active {
+	background: url(../img/toggle2_hover.png) bottom right no-repeat;
+}
+div.dropdown-slider {
+	display: none;
+	margin: 0;
+	position: absolute;
+	top: 46px;
+	left: -30%;
+	width: 150% !important;
+	background: #ccc;/*none;*/	
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	z-index: 100;
+}
+div.dropdown-slider:before {
+	content:"\00a0";
+	display:block;
+	position:absolute;
+	width:11px;
+	height:7px;
+	top:-6px;
+	left:45%;
+	background: url(../img/dropdowntriangle.png) no-repeat top center;
+}
+div.dropdown-slider .ddm {
+	display: block;
+	background: #ccc;/*#fff;*/
+	color: #333;
+	text-decoration: none;
+	font: normal 12px Arial, sans-serif;
+	line-height: 14px;
+	height: 14px;
+	margin: 0;
+	padding: 8px 0;
+	float: left;
+	width:100%;/*border-top: 1px solid #FFF;*/
+	
+}
+div.dropdown-slider .ddm:first-child {
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-topright: 4px;
+	-moz-border-radius-bottomright: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	-webkit-border-radius: 4px 4px 0px 0px;
+	border-radius: 4px 4px 0px 0px;
+}
+div.dropdown-slider .ddm:last-child {
+	-moz-border-radius-topleft: 0px;
+	-moz-border-radius-topright: 0px;
+	-moz-border-radius-bottomright: 4px;
+	-moz-border-radius-bottomleft: 4px;
+	-webkit-border-radius: 0px 0px 4px 4px;
+	border-radius: 0px 0px 4px 4px;
+}
+div.dropdown-slider .ddm .label {
+	padding-left:0;
+	padding-right:0;
+	text-align:center;
+	display:inline;
+	width:100% !important;
+}
+div.dropdown-slider .ddm:hover {
+	background: #01730c;/*#333;*/
+	color:#fff;
+}
+div.dropdown-slider .ddm:active {	
+	-moz-box-shadow:inset 0 0 10px #D4D4D4;
+	-webkit-box-shadow:inset 0 0 10px #D4D4D4;
+	box-shadow:inset 0 0 10px #D4D4D4;
+}
+div.dropdown-slider .ddm:last-child {
+	border-bottom: none;
+}

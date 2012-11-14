@@ -1,0 +1,25 @@
+
+
+.interaction.package .contentblock {
+  position: relative;
+  padding-left: 22px !important;
+	
+	/* will be overwritten by enum javascript in js/enumerations.js
+	if enum is enabled will be the gap between enum and content area,
+	if no enum will be padding-left of content area */
+}
+
+.interaction.package .contentblock > .enum{
+  color:#000;
+  position: absolute;
+  display: block;
+  top: 0px;
+  left: 0px;
+  text-align: right;
+  padding-right: 8px;
+  font-size: 1.5em;  
+}
+
+.interaction.package .contentblock .enum-answers {
+  color: #f08826;
+}

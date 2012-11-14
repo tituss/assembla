@@ -1,0 +1,8 @@
+.interaction.ic-crossword .crossword_view .cell-hilite {
+    background-color: #fae1ab;
+}
+
+.interaction.ic-crossword .crossword_view>table {
+	border-collapse: separate;
+	border-spacing: 10px 0;
+}

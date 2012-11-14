@@ -1,0 +1,127 @@
+/*
+ *this css file is to be used to place styles for supplements areas that we attach by adding class names to in the source code.
+ *It is a proposed workaround until we find an ideal solution to the text templates.
+*/
+
+/* reset for facs - call by including .facs_reset as a class - can be removed if we have a reset working across entire project */
+.facs_reset html, .facs_reset body, .facs_reset div, .facs_reset span, .facs_reset applet, .facs_reset object, .facs_reset iframe,
+.facs_reset h1, .facs_reset h2, .facs_reset h3, .facs_reset h4, .facs_reset h5, .facs_reset h6, .facs_reset p, .facs_reset blockquote, .facs_reset pre,
+.facs_reset a, .facs_reset abbr, .facs_reset acronym, .facs_reset address, .facs_reset big, .facs_reset cite, .facs_reset code,
+.facs_reset del, .facs_reset dfn, .facs_reset em, .facs_reset img, .facs_reset ins, .facs_reset kbd, .facs_reset q, .facs_reset s, .facs_reset samp,
+.facs_reset small, .facs_reset strike, .facs_reset strong, .facs_reset sub, .facs_reset sup, .facs_reset tt, .facs_reset var,
+.facs_reset b, .facs_reset u, .facs_reset i, .facs_reset center,
+.facs_reset dl, .facs_reset dt, .facs_reset dd, .facs_reset ol, .facs_reset ul, .facs_reset li,
+.facs_reset fieldset, .facs_reset form, .facs_reset label, .facs_reset legend,
+.facs_reset table, .facs_reset caption, .facs_reset tbody, .facs_reset tfoot, .facs_reset thead, .facs_reset tr, .facs_reset th, .facs_reset td,
+.facs_reset article, .facs_reset aside, .facs_reset canvas, .facs_reset details, .facs_reset embed, 
+.facs_reset figure, .facs_reset figcaption, .facs_reset footer, .facs_reset header, .facs_reset hgroup, 
+.facs_reset menu, .facs_reset nav, .facs_reset output, .facs_reset ruby, .facs_reset section, .facs_reset summary,
+.facs_reset time, .facs_reset mark, .facs_reset audio, .facs_reset video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.facs_reset body {
+  line-height: 1;
+}
+.facs_reset ol, .facs_reset ul {
+  list-style: none;
+}
+.facs_reset blockquote, .facs_reset q {
+  quotes: none;
+}
+.facs_reset blockquote:before, .facs_reset blockquote:after,
+.facs_reset q:before, .facs_reset q:after {
+  content: '';
+  content: none;
+}
+.facs_reset table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.facs_reset strong{
+  font-weight: bold;
+}
+.facs_reset em{
+  font-style: italic;
+}
+/* End reset */
+
+
+/*Contents*
+
+  Number  |  Name                             |  Course                    |  Description
+  $001    |  .facs_q_rw_notes_v01             |  Q                         |  Used for info texts about grammar, etc.
+
+ 
+ *End of contents*/
+
+
+
+ /* $001 .facs_q_rw_notes_v01 */
+.facs_q_rw_notes_v01{
+  padding: 5px 10px;
+  background: rgba(224,244,255,.75);
+  font: 14px Georgia, serif;
+  line-height:1.7;
+  color: rgba(51,51,51,1);
+}
+
+.facs_q_rw_notes_v01 h1{
+  font-size: 1.4em;
+  color: rgba(0,97,114,1);
+}
+
+.facs_q_rw_notes_v01 .facs_example_text{
+  color: rgba(0,97,114,1);
+}
+
+.facs_q_rw_notes_v01 .facs_example_text:last-child{
+  margin-bottom: 0;
+}
+
+.facs_q_rw_notes_v01 .facs_note{
+  padding: 2px 5px;
+  background: #fff;
+  display: table;
+}
+
+.facs_q_rw_notes_v01 .facs_note h2{
+  background: rgba(0,97,114,.5);
+  color: #FFF;
+  margin: -2px -5px 0 -5px;
+  padding: 0 5px;
+}
+
+.facs_q_rw_notes_v01 .facs_note h2:before{
+  content: "Note:";
+  margin-right:5px;
+}
+
+.facs_q_rw_notes_v01 .facs_note:last-child{
+  margin-bottom: 0;
+}
+
+.facs_q_rw_notes_v01 .facs_show_error{
+  color:#A50000;
+}
+
+.facs_q_rw_notes_v01 p + .facs_note, 
+.facs_q_rw_notes_v01 .facs_example_text + .facs_note,
+.facs_q_rw_notes_v01 .facs_example_text + p,
+.facs_q_rw_notes_v01 .facs_note + p,
+.facs_q_rw_notes_v01 .facs_note + .facs_example_text{
+  margin-top: 8px;
+}
+ /* END $001 .facs_q_rw_notes_v01 */
+
+
+
+
+
+
+

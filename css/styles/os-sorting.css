@@ -1,0 +1,46 @@
+/* Added MLG 2012-07-26 #32 */
+.interaction.package-editable.os-sorting .match_dds_view .block .multi_drop_area.is-active-target {
+  box-shadow: 0 0 0 6px rgba(240,136,38,1);
+  border-radius: 4px;
+}
+
+.interaction.package-editable.os-sorting .match_dds_view .contentblock table {
+  display: inline-block;
+  border-collapse: separate;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.35);
+  margin: 3px 10px 0px 0;
+}
+
+body.isIE9 .interaction.package-editable.os-sorting .match_dds_view .contentblock table {
+  box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.35);
+}
+
+.interaction.package-editable.os-sorting .match_dds_view .contentblock table th {
+  border: 0px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #F0F0F0;
+  border-bottom: solid 1px #DDDDDD;
+  color: #444444;
+  font-weight: bold;
+  margin: -4px -4px 8px;
+  padding: 2px 4px;
+  text-shadow: 0 1px 0 #FFFFFF;
+}
+
+.interaction.package-editable.os-sorting .match_dds_view .contentblock table td {
+  border: 0px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #FFFFFF;
+  padding: 4px;
+}
+
+.interaction.package-editable.os-sorting .match_dds_view .contentblock .multi_drop_area.target_target .drag_element {
+  margin: 0px 0px 8px 0px;
+}
+
+.interaction.package-editable.os-sorting .match_dds_view .wordpool .source_target {
+  vertical-align: top;
+}

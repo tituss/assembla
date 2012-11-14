@@ -1,0 +1,205 @@
+/* VENDOR-TRANSFORM */
+
+
+.interaction.package.ic-speaking-and-recording .recorder {
+  padding: 4px 0px 4px 0px;
+  margin-bottom: 6px;
+  background-color: #DDD;
+  float: left;
+  border-radius:6px;
+  box-shadow:0 1px 0 0 rgba(0,0,0,0.3);
+  border-collapse: separate; /* ie won't display shadows properly otherwise */
+}
+
+
+.interaction.package.ic-speaking-and-recording .recorder .button:before {
+  content:"\00a0";
+  width:25px;
+  height:100%;
+  position:absolute;
+  display:inline-block;
+  top:0px;
+  left:-26px;
+  text-shadow:1px 1px 0px #07526e;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.interaction.package.ic-speaking-and-recording .recorder .button {
+  font-family: Arial, sans-serif;
+  font-size:12px;
+  line-height:18px;
+  color:#fff;
+  text-decoration:none;
+  text-shadow:0 1px 0 rgba(0,0,0,0.5);
+  position:relative;
+  float: left;
+  display: block;
+  padding:2px 8px;
+  margin-bottom:8px;
+  border-left:solid 1px #2ab7ec;
+  margin-left:33px;
+  margin-right:8px;
+  background: rgba(112,112,112,1);
+  /*  
+  background: -moz-linear-gradient(top, rgba(150,150,150,1) 0%,rgba(75,75,75,1) 100%);
+  background: -webkit-linear-gradient(top, rgba(150,150,150,1) 0%,rgba(75,75,75,1) 100%);
+  background: -o-linear-gradient(top, rgba(150,150,150,1) 0%,rgba(75,75,75,1) 100%);
+  background: -ms-linear-gradient(top, rgba(150,150,150,1) 0%,rgba(75,75,75,1) 100%);
+  */
+  background: linear-gradient(top, rgba(150,150,150,1) 0%,rgba(75,75,75,1) 100%);
+
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: inset 0px 1px 0px rgba(255,255,255,0.5), 0px 5px 0px 0px rgba(60,60,60,1), 0px 8px 3px rgba(0,0,0,0.5);
+}
+
+.interaction.package.ic-speaking-and-recording .recorder .button.disabled {
+  color: #aaa;
+}
+
+.interaction.package.ic-speaking-and-recording .recorder .button.active,
+.interaction.package.ic-speaking-and-recording .recorder .button.activating,
+.interaction.package.ic-speaking-and-recording .recorder .button:active:not(.disabled) {
+  top:3px;
+  background: rgba(112,112,112,1);
+  /*
+  background: -moz-linear-gradient(top, rgba(75,75,75,1) 0%,rgba(150,150,150,1) 100%);
+  background: -webkit-linear-gradient(top, rgba(75,75,75,1) 0%,rgba(150,150,150,1) 100%);
+  background: -o-linear-gradient(top, rgba(75,75,75,1) 0%,rgba(150,150,150,1) 100%);
+  background: -ms-linear-gradient(top, rgba(75,75,75,1) 0%,rgba(150,150,150,1) 100%);
+  */
+  background: linear-gradient(top, rgba(75,75,75,1) 0%,rgba(150,150,150,1) 100%);
+box-shadow: inset 0px 1px 0px rgba(255,255,255,0.5), 0px 2px 0px 0px rgba(60,60,60,1), 0px 5px 3px #999;
+}
+
+.interaction.package.ic-speaking-and-recording .recorder .button.listen:before {
+	background-color: rgba(0,187,244,1);
+	background-image: url(../images/lrp_listen_default.png);
+  /*
+  background: url(../images/icons/lrp_listen_default.png) no-repeat top left, -moz-linear-gradient(top, rgba(0,187,244,1) 10%,rgba(0,103,135,1) 100%);
+  background: url(../images/icons/lrp_listen_default.png) no-repeat top left, -webkit-linear-gradient(top, rgba(0,187,244,1) 10%,rgba(0,103,135,1) 100%);
+  background: url(../images/icons/lrp_listen_default.png) no-repeat top left, -o-linear-gradient(top, rgba(0,187,244,1) 10%,rgba(0,103,135,1) 100%);
+  background: url(../images/icons/lrp_listen_default.png) no-repeat top left, -ms-linear-gradient(top, rgba(0,187,244,1) 10%,rgba(0,103,135,1) 100%);
+  */
+  background: url(../images/icons/lrp_listen_default.png) no-repeat top left, linear-gradient(top, rgba(0,187,244,1) 10%,rgba(0,103,135,1) 100%);
+border-right:solid 1px #444;
+  box-shadow:inset 0px 1px 0px rgba(255,255,255,0.5), 0px 5px 0px 0px rgba(0,50,60,1), 0px 8px 3px rgba(0,0,0,0.5);
+}
+
+.interaction.package.ic-speaking-and-recording .recorder .button.record:before {
+	background-color: rgba(255,35,35,1);
+	background-image: url(../images/lrp_record_default.png);
+  /*
+  background: url(../images/lrp_record_default.png) no-repeat top left, -moz-linear-gradient(top, rgba(255,35,35,1) 0%,rgba(142,2,2,1) 100%);
+  background: url(../images/lrp_record_default.png) no-repeat top left, -webkit-linear-gradient(top, rgba(255,35,35,1) 0%,rgba(142,2,2,1) 100%);
+  background: url(../images/lrp_record_default.png) no-repeat top left, -o-linear-gradient(top, rgba(255,35,35,1) 0%,rgba(142,2,2,1) 100%);
+  background: url(../images/lrp_record_default.png) no-repeat top left, -ms-linear-gradient(top, rgba(255,35,35,1) 0%,rgba(142,2,2,1) 100%);
+  */
+  background: url(../images/lrp_record_default.png) no-repeat top left, linear-gradient(top, rgba(255,35,35,1) 0%,rgba(142,2,2,1) 100%);
+border-right:solid 1px rgba(90,0,0,1);
+  box-shadow:inset 0px 1px 0px rgba(255,255,255,0.5), 0px 5px 0px 0px rgba(90,0,0,1), 0px 8px 3px rgba(0,0,0,0.5);
+}
+
+.interaction.package.ic-speaking-and-recording .recorder .button.play:before {
+	background-color: rgba(183,244,0,1);
+	background-image: url(../images/lrp_play_default.png);
+  /*
+  background: url(../images/lrp_play_default.png) no-repeat top left, -moz-linear-gradient(top, rgba(183,244,0,1) 10%,rgba(104,145,0,1) 100%);
+  background: url(../images/lrp_play_default.png) no-repeat top left, -webkit-linear-gradient(top, rgba(183,244,0,1) 10%,rgba(104,145,0,1) 100%);
+  background: url(../images/lrp_play_default.png) no-repeat top left, -o-linear-gradient(top, rgba(183,244,0,1) 10%,rgba(104,145,0,1) 100%);
+  background: url(../images/lrp_play_default.png) no-repeat top left, -ms-linear-gradient(top, rgba(183,244,0,1) 10%,rgba(104,145,0,1) 100%);
+  */
+  background: url(../images/lrp_play_default.png) no-repeat top left, linear-gradient(top, rgba(183,244,0,1) 10%,rgba(104,145,0,1) 100%);
+border-right:solid 1px rgba(50,60,0,1);
+  box-shadow:inset 0px 1px 0px rgba(255,255,255,0.5), 0px 5px 0px 0px rgba(50,60,0,1), 0px 8px 3px rgba(0,0,0,0.5);
+}
+
+
+.interaction.package.ic-speaking-and-recording .recorder .button:active:not(.disabled):before,
+.interaction.package.ic-speaking-and-recording .recorder .button.active:before,
+.interaction.package.ic-speaking-and-recording .recorder .button.activating:before {
+	top:-3px;
+  border-right:solid 1px #222;
+}
+
+.interaction.package.ic-speaking-and-recording .recorder .button.listen:hover:not(.disabled):before {
+	background-color: rgba(0,187,244,1);
+	background-image: url(../images/lrp_listen_hover.png);
+  /*
+  background: url(../images/lrp_listen_hover.png) no-repeat top left, -moz-linear-gradient(top, rgba(0,187,244,1) 10%,rgba(0,103,135,1) 100%);
+  background: url(../images/lrp_listen_hover.png) no-repeat top left, -webkit-linear-gradient(top, rgba(0,187,244,1) 10%,rgba(0,103,135,1) 100%);
+  background: url(../images/lrp_listen_hover.png) no-repeat top left, -o-linear-gradient(top, rgba(0,187,244,1) 10%,rgba(0,103,135,1) 100%);
+  background: url(../images/lrp_listen_hover.png) no-repeat top left, -ms-linear-gradient(top, rgba(0,187,244,1) 10%,rgba(0,103,135,1) 100%);
+  */
+  background: url(../images/lrp_listen_hover.png) no-repeat top left, linear-gradient(top, rgba(0,187,244,1) 10%,rgba(0,103,135,1) 100%);
+}
+
+.interaction.package.ic-speaking-and-recording .recorder .button.record:hover:not(.disabled):before {
+	background-color: rgba(255,35,35,1);
+	background-image: url(../images/lrp_record_hover.png);
+  /*
+  background: url(../images/lrp_record_hover.png) no-repeat top left, -moz-linear-gradient(top, rgba(255,35,35,1) 0%,rgba(142,2,2,1) 100%);
+  background: url(../images/lrp_record_hover.png) no-repeat top left, -webkit-linear-gradient(top, rgba(255,35,35,1) 0%,rgba(142,2,2,1) 100%);
+  background: url(../images/lrp_record_hover.png) no-repeat top left, -o-linear-gradient(top, rgba(255,35,35,1) 0%,rgba(142,2,2,1) 100%);
+  background: url(../images/lrp_record_hover.png) no-repeat top left, -ms-linear-gradient(top, rgba(255,35,35,1) 0%,rgba(142,2,2,1) 100%);
+  */
+  background: url(../images/lrp_record_hover.png) no-repeat top left, linear-gradient(top, rgba(255,35,35,1) 0%,rgba(142,2,2,1) 100%);
+}
+
+.interaction.package.ic-speaking-and-recording .recorder .button.play:hover:not(.disabled):before {
+	background-color: rgba(0,187,244,1);
+	background-image: url(../images/lrp_play_hover.png);
+  /*
+  background: url(../images/lrp_play_hover.png) no-repeat top left, -moz-linear-gradient(top, rgba(183,244,0,1) 10%,rgba(104,145,0,1) 100%);
+  background: url(../images/lrp_play_hover.png) no-repeat top left, -webkit-linear-gradient(top, rgba(183,244,0,1) 10%,rgba(104,145,0,1) 100%);
+  background: url(../images/lrp_play_hover.png) no-repeat top left, -o-linear-gradient(top, rgba(183,244,0,1) 10%,rgba(104,145,0,1) 100%);
+  background: url(../images/lrp_play_hover.png) no-repeat top left, -ms-linear-gradient(top, rgba(183,244,0,1) 10%,rgba(104,145,0,1) 100%);
+  */
+  background: url(../images/lrp_play_hover.png) no-repeat top left, linear-gradient(top, rgba(183,244,0,1) 10%,rgba(104,145,0,1) 100%);
+}
+
+.interaction.package.ic-speaking-and-recording .recorder .button.listen.active:before,
+.interaction.package.ic-speaking-and-recording .recorder .button.listen:active:not(disabled):before {
+	background-color: rgba(0,187,244,1);
+	background-image: url(../images/lrp_listen_active.png);
+  /*
+  background: url(../images/lrp_listen_active.png) no-repeat top left, -moz-linear-gradient(top, rgba(0,187,244,1) 10%,rgba(0,103,135,1) 100%);
+  background: url(../images/lrp_listen_active.png) no-repeat top left, -webkit-linear-gradient(top, rgba(0,187,244,1) 10%,rgba(0,103,135,1) 100%);
+  background: url(../images/lrp_listen_active.png) no-repeat top left, -o-linear-gradient(top, rgba(0,187,244,1) 10%,rgba(0,103,135,1) 100%);
+  background: url(../images/lrp_listen_active.png) no-repeat top left, -ms-linear-gradient(top, rgba(0,187,244,1) 10%,rgba(0,103,135,1) 100%);
+  */
+  background: url(../images/lrp_listen_active.png) no-repeat top left, linear-gradient(top, rgba(0,187,244,1) 10%,rgba(0,103,135,1) 100%);
+box-shadow:inset 0px 1px 0px rgba(255,255,255,0.5), 0px 5px 0px 0px #032b3a, 1px 1px 0px 0px #333, 2px 2px 0px 0px #333, 2px 5px 0px 0px #333, 6px 4px 2px rgba(0,0,0,0.4), 0px 8px 3px rgba(0,0,0,0.5);
+}
+
+.interaction.package.ic-speaking-and-recording .recorder .button.record.active:before,
+.interaction.package.ic-speaking-and-recording .recorder .button.record:active:not(.disabled):before,
+.interaction.package.ic-speaking-and-recording .recorder .button.record.activating:before   {
+	background-color: rgba(255,35,35,1);
+	background-image: url(../images/lrp_record_active.png);
+  /*background: url(../images/lrp_record_active.png) no-repeat top left, -moz-linear-gradient(top, rgba(255,35,35,1) 0%,rgba(142,2,2,1) 100%);
+  background: url(../images/lrp_record_active.png) no-repeat top left, -webkit-linear-gradient(top, rgba(255,35,35,1) 0%,rgba(142,2,2,1) 100%);
+  background: url(../images/lrp_record_active.png) no-repeat top left, -o-linear-gradient(top, rgba(255,35,35,1) 0%,rgba(142,2,2,1) 100%);
+  background: url(../images/lrp_record_active.png) no-repeat top left, -ms-linear-gradient(top, rgba(255,35,35,1) 0%,rgba(142,2,2,1) 100%);
+  */
+  background: url(../images/lrp_record_active.png) no-repeat top left, linear-gradient(top, rgba(255,35,35,1) 0%,rgba(142,2,2,1) 100%);
+box-shadow:inset 0px 1px 0px rgba(255,255,255,0.5), 0px 5px 0px 0px rgba(90,0,0,1), 1px 1px 0px 0px #333, 2px 2px 0px 0px #333, 2px 5px 0px 0px #333, 6px 4px 2px rgba(0,0,0,0.4), 0px 8px 3px rgba(0,0,0,0.5); 
+}
+
+.interaction.package.ic-speaking-and-recording .recorder .button.play.active:before,
+.interaction.package.ic-speaking-and-recording .recorder .button.play:active:not(.disabled):before {
+	background-color: rgba(0,187,244,1);
+	background-image: url(../images/lrp_play_active.png);
+  /*
+  background: url(../images/lrp_play_active.png) no-repeat top left, -moz-linear-gradient(top, rgba(183,244,0,1) 10%,rgba(104,145,0,1) 100%);
+  background: url(../images/lrp_play_active.png) no-repeat top left, -webkit-linear-gradient(top, rgba(183,244,0,1) 10%,rgba(104,145,0,1) 100%);
+  background: url(../images/lrp_play_active.png) no-repeat top left, -o-linear-gradient(top, rgba(183,244,0,1) 10%,rgba(104,145,0,1) 100%);
+  background: url(../images/lrp_play_active.png) no-repeat top left, -ms-linear-gradient(top, rgba(183,244,0,1) 10%,rgba(104,145,0,1) 100%);
+  */
+  background: url(../images/lrp_play_active.png) no-repeat top left, linear-gradient(top, rgba(183,244,0,1) 10%,rgba(104,145,0,1) 100%);
+box-shadow:inset 0px 1px 0px rgba(255,255,255,0.5), 0px 5px 0px 0px rgba(50,60,0,1), 1px 1px 0px 0px #333, 2px 2px 0px 0px #333, 2px 5px 0px 0px #333, 6px 4px 2px rgba(0,0,0,0.4), 0px 8px 3px rgba(0,0,0,0.5);  
+}
+
+
+

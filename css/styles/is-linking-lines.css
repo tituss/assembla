@@ -1,0 +1,13 @@
+/* seems to have no css in designpack yet, probably all in engine css. needs to be moved here */
+
+/* Added GR 2012-08-02 #124 */
+.is-linking-lines.delete-cursor .ll_view	{
+	cursor: url(../images/rubber-cursor-med.png) 19 18, auto;
+}
+
+.is-linking-lines.toolbar .toolbar .button.key-del, .is-linking-lines.toolbar .toolbar .button.key-del:hover {
+	padding-right: 28px;
+	background-image: url(../images/rubber-cursor-tiny.png);
+	background-repeat:no-repeat;
+	background-position: 42px; 
+}

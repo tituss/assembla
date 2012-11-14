@@ -1,0 +1,109 @@
+/*
+  the default drag drop design
+  is used by:
+    - om-text-gap
+    - om-text-gap-label-an-object
+    - om-pairs
+    - os-sorting
+*/
+
+/* VENDOR-TRANSFORM */
+
+
+.interaction.package-editable.drag-drop .drag_element {
+  box-shadow: 0px 0px 0px 1px #DCDCDC;
+  text-align: center;
+  border-radius: 5px;
+  padding: 0px;
+}
+
+.interaction.package-editable.drag-drop .pool .drag_element {
+  background: rgba(225,225,225,1);
+  background: linear-gradient(top, rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%);
+  min-height: auto !important;
+}
+
+.interaction.package-editable.drag-drop .block .drag_element {
+  background: #F9B134;
+  background: linear-gradient(center top, #F9B134 5%, #EF8827 100%);
+  color: #FFFFFF;
+  box-shadow: 0 0 3px 0 #000000 inset;
+}
+
+.interaction.package-editable.drag-drop .block .drag_element.prefilled {
+  opacity: 0.6;
+}
+
+.interaction.package-editable.drag-drop .drag_element .content {
+  padding: 0 6px;
+  background: none;
+  margin: 0 !important;
+}
+	
+.interaction.package-editable.drag-drop .drag_element:hover {
+    background: #fae0b3;
+}
+
+.interaction.package-editable.drag-drop .pool .drag_element:hover {  
+  background: #F9B134;
+  background: linear-gradient( center top, #F9B134 5%, #EF8827 100% );
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, .5);
+  box-shadow: 0px 0px 0px 1px rgba(240,136,38,1);
+}
+
+.interaction.package-editable.drag-drop .block .drag_element:hover {
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.8) inset, 0 0 0 3px rgba(0, 0, 0, 0.1);
+}
+.interaction.package-editable.drag-drop .block .drag_element.prefilled:hover {
+  box-shadow: 0 0 3px 0 #000000 inset;
+}
+
+.interaction.package-editable.editor.ic-speaking-and-recording .element.dragged {
+  
+  background: #F9B134;
+  background: linear-gradient( center top, #F9B134 5%, #EF8827 100% );
+}
+
+.interaction.package-editable.drag-drop .drag_element:active, .interaction.package-editable.drag-drop .drag_element.dragged {
+  background: #fae0b3;
+  box-shadow: 0px 0px 0px 2px #bfe6c3;
+  /* Added MLG 2012-07-30 #49 */
+  color: #ffffff;
+}
+
+.interaction.package-editable.drag-drop .wordpool .pool,
+.interaction.os-sorting .wordpool {
+  background: #f5f5f5;
+  padding:4px;
+  border-radius:5px;
+}
+
+.interaction.package-editable.drag-drop .wordpool .pool .drag_holder,
+.interaction.om-pairs .wordpool .drag_item {
+  border: solid 0px white;
+  background-color: rgba(230,230,230,1);/* added CB 19/07/2012 #35 */
+  box-shadow: 0 0 0 1px rgba(230,230,230,1);/* added CB 19/07/2012 #35 */
+  border-radius: 5px;/* added CB 19/07/2012 #35 */
+  min-height: auto !important;
+  vertical-align: top;
+}
+
+
+.interaction.package-editable.drag-drop .drag_element.is-active-target-source {
+  box-shadow: 0 0 0 4px #F9B134;
+  cursor: url("../images/drop_indicator_cursor.png") 12 12, auto;
+}
+
+/*clearfix below required for drag and drop matching as elements float within it and it wasn't currently clearfixed. If this is the wrong way to define this then please update*/
+.interaction.package-editable.drag-drop .wordpool .pool:after{
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}	
+
+
+
+

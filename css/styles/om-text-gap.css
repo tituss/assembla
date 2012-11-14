@@ -1,0 +1,35 @@
+
+.interaction.package.om-text-gap .wordpool .block .drag_holder{
+  background:#fff;
+  border-radius: 4px;
+  border:none;
+  box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, .5), 0px 1px 0px 0px rgba(255,255,255,1);
+  margin-bottom: 0em;
+  min-height: auto !important;
+  float:right;
+}
+
+/* removed CB 19/07/2012 #35: .interaction.package-editable.om-text-gap .drag_holder - moved rule to less specific .drag-drop file and selector as needed for all drag and drop activities*/
+
+.interaction.package-editable.om-text-gap .drag_holder a{
+  text-decoration: none;
+  vertical-align: top;
+}
+
+/* added GR 27/7/2012 #102*/
+.interaction.om-text-gap .gap_match_view .drop_area {
+  margin-top: 0px;
+  margin-bottom: 0px;
+} 
+
+/* removed by GR 27/7/2012 #93 
+.interaction.package.om-text-gap .gap_match_gap_view .drag_holder .drag_element{
+  margin-top: -1px;
+} */
+
+/* Added MLG 2012-07-26 #32 */
+.interaction.package-editable.om-text-gap .gap_match_view .block .drop_area.is-active-target {
+  box-shadow: 0 0 0 2px rgba(250,224,179,1);
+  border-radius: 4px;
+}
+
